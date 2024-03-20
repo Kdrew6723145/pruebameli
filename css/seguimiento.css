@@ -1,0 +1,52 @@
+.container-custom {
+  height: calc(100vh - 64px);
+  width: calc(100vw - 300px);
+  display: grid;
+  grid-template-columns: 45% 30% 25%;
+  grid-template-rows: 30% 36% 33%;
+  overflow: hidden;
+  margin-left: 300px;
+}
+.container-chart-general {
+  /* display: none; */
+  grid-row: 1 / 3;
+  grid-column: 2 / 4;
+}
+/*  */
+.container-chart-individuales {
+  display: grid;
+  grid-row: 3 / 4;
+  grid-column: 1 / 4;
+  /* grid-template-columns: 50% 50%; */
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-top: 20px;
+  /* display: inline-block; */
+}
+.container-chart-individuales div {
+  position: relative;
+}
+.container-chart-individuales div::before {
+  color: rgb(65, 65, 65);
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container-chart-individuales div:nth-child(1)::before {
+  content: "PLANEAR";
+}
+.container-chart-individuales div:nth-child(2)::before {
+  content: "HACER";
+}
+.container-chart-individuales div:nth-child(3)::before {
+  content: "VERIFICAR";
+}
+.container-chart-individuales div:nth-child(4)::before {
+  content: "ACTUAR";
+}
+/*  */
+.table-datos-container {
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+  padding: 5px 5px 15px 5px;
+}

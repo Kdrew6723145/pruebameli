@@ -1,0 +1,21 @@
+table tr {
+  transition: 0.2s;
+}
+table tr:nth-child(1) td {
+  font-weight: bold #dbdbdb;
+}
+table tr td,
+table tr th {
+  border: 0.1px dotted #999;
+}
+table tr:not(:nth-child(1)):not(.documento_sin_fecha):hover {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+.documento_sin_fecha {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.documento_sin_fecha td,
+.documento_sin_fecha td a {
+  color: #fff;
+  text-decoration: underline;
+}
